@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {  
+    background:black;
+    padding: 20px;
+    
+}
+body {
+    background-color: rgb(229, 237, 240);
+}
+header > h1 {
+    color:yellow;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+.green-glow {
+    border: 6px solid green;
+    box-shadow: 0 0 20px green;
+}
+
+.red-glow {
+    border: 6px solid red;
+    box-shadow: 0 0 20px red;
+}
+
+.gray-glow {
+    border: 6px solid grey;
+    box-shadow: 0 0 20px grey;
+}
+
+.score-board {
+   border: 3px solid black;
+   border-radius:20px;
+   margin: 20px auto;
+   width: 400px;
+   color:black;
+   font-size: 46px;
+   text-align: center;
+   padding: 15px 20px;
+   position: relative;
+
+}
+
+.badge {
+    background:red;
+    color: white;
+    font-size: 30px;
+    padding: 2px 10px;
+}
+
+#user-label{
+    position: absolute;
+    top: 20px;
+    left: -40px;
+    
+}
+#computer-label{
+    position: absolute;
+    top:20px;
+    right:-70px;
+    
+}
+
+.result {
+    font-size: 40px;
+    color: black;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.choice {
+    display: inline-block;
+    border: solid 1px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: rgb(226, 226, 150);
+}
+
+#action-message {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#table{
+     border: 1px solid black;
+     font-size: 34px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 20px;
+     border-collapse: collapse;
+     padding: 10px;
+     text-align: center;
+     text-shadow: 1px 1px 1px black;
+     border-color:rgb(13, 174, 202); 
+     color: rgb(13, 174, 202);
+}
+th {
+    height: 70px;
+    width: 200px;
+  }
+
+  td {
+    border: 1px solid rgb(13, 174, 202);
+    border-color:rgb(13, 174, 202);
+  }
+  
+  tr.even, .winner td:nth-child(2) {
+    background-color: #f1e5bd;
+  }
+
+  tr.odd  {
+      background-color:#f1d67b;
+  }
+
+ .winner td:nth-child(1),.table-header{
+    background-color: rgb(240, 172, 27);
+ }
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="alert.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="score-board">
+        <div id="user-label" class="badge">User</div>
+        <div id="computer-label" class="badge">Computer</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <div class="result">
+        <p>Let's get started!</p>
+    </div>
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="./images/r300.png" alt="Something went wrong!">
+        </div>
+        <div class="choice" id="p">
+            <img src="./images/p300.png" alt="Something went wrong!">
+        </div>
+        <div class="choice" id="s">
+            <img src="./images/s300.png" alt="Something went wrong!">
+        </div>
+    </div>
+    <p id="action-message">Make your choice! Defeat the computer in 3x7 game...</p>
+
+
+    <div class ="table">
+        <table id = "table">
+            <tr class = "table-header">
+                <th id = "table-game">Game No</th>
+                <th id = "table-user">User</th>
+                <th id = "table-computer">Computer</th>
+            </tr>
+            <tr class = "odd">
+                <td>1.</td>
+                <td id="user-first-game"></td>
+                <td id="computer-first-game"></td>
+            </tr>
+            <tr class = "even">
+                <td>2.</td>
+                <td id ="user-second-game"></td>
+                <td id="computer-second-game"></td>
+            </tr>
+            <tr class = "odd">
+                <td >3.</td>
+                <td id ="user-third-game"></td>
+                <td id ="computer-third-game"></td>
+            </tr>
+            <tr class = "winner">
+                <td>Winner:</td>
+                <td id = "final-result" colspan="2"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="customAlert.js" charset="utf-8"></script>
+</body>
+
+</html>
